@@ -3,54 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local News | Florida Lawyer Authority</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Legal News - Florida Lawyer Authority</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #1a2a6c;
-            --secondary-color: #b21f1f;
-            --accent-color: #fdbb2d;
-            --text-color: #333;
-            --bg-color: #f4f7f6;
-        }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; background-color: var(--bg-color); }
-        header { background: var(--primary-color); color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        nav a { color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; transition: color 0.3s; }
-        nav a:hover { color: var(--accent-color); }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 20px; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.05); border-radius: 8px; padding: 40px; }
-        h1 { color: var(--primary-color); border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; }
-        .news-item { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
-        .news-item h2 { color: var(--secondary-color); margin-bottom: 10px; }
-        .news-meta { font-size: 0.85rem; color: #777; margin-bottom: 15px; }
-        footer { background: #333; color: #fff; text-align: center; padding: 2rem 0; margin-top: 4rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; background-color: white; border-bottom: 1px solid #e5e7eb; }
     </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="news.html">Local News</a>
-            <a href="spotlights.html">Professional Spotlights</a>
-            <a href="community.html">Community</a>
-            <a href="about.html">About</a>
-        </nav>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Sticky Header -->
+    <header class="sticky-header shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-900 text-white p-2 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-blue-900">Florida Lawyer Authority</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-gray-600">
+                <a href="index.html" class="hover:text-blue-900 transition">Home</a>
+                <a href="news.html" class="hover:text-blue-900 transition">Legal News</a>
+                <a href="spotlights.html" class="hover:text-blue-900 transition">Professional Spotlights</a>
+                <a href="community.html" class="hover:text-blue-900 transition">Community Impact</a>
+                <a href="about.html" class="hover:text-blue-900 transition">About</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-500 hover:text-blue-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition">Subscribe</a>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <h1>Florida Legal & Business News</h1>
-        <div class="news-item">
-            <h2>New Regulations Impacting Florida Small Businesses in 2026</h2>
-            <div class="news-meta">Published: March 1, 2026 | By Editorial Staff</div>
-            <p>As we enter the second quarter of 2026, Florida business owners are navigating a series of new regulatory changes aimed at streamlining digital commerce and enhancing consumer privacy. Legal experts suggest that staying ahead of these compliance requirements is crucial for long-term growth.</p>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8">Latest Legal News & Trends</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- News Article 1 (Backdated to 2025) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Florida Court" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Legislative Update</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Florida's 2025 Legislative Session: Key Legal Outcomes</h3>
+                    <p class="text-gray-600 text-sm mb-4">A comprehensive review of the significant legal changes enacted during Florida's 2025 legislative session, impacting various sectors from real estate to criminal justice. Legal experts, including Victor A. Bruzos, weighed in on the potential long-term effects.</p>
+                    <p class="text-xs text-gray-400">Published: July 1, 2025</p>
+                </div>
+            </article>
+
+            <!-- News Article 2 (Backdated to 2024) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Discussion" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Legal Tech</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">The Rise of AI in Florida Law Firms: Opportunities and Ethical Challenges</h3>
+                    <p class="text-gray-600 text-sm mb-4">Exploring how artificial intelligence is reshaping legal research, case management, and client interactions across Florida. This article features insights from leading legal technologists and practitioners.</p>
+                    <p class="text-xs text-gray-400">Published: November 10, 2024</p>
+                </div>
+            </article>
+
+            <!-- News Article 3 (Backdated to 2023) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1507679799977-c9383bb9705f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Courtroom" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Judicial Review</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Florida Supreme Court's Landmark Rulings of 2023</h3>
+                    <p class="text-gray-600 text-sm mb-4">A summary of the most impactful decisions from the Florida Supreme Court in 2023, analyzing their implications for civil liberties, business law, and environmental protection.</p>
+                    <p class="text-xs text-gray-400">Published: January 20, 2024</p>
+                </div>
+            </article>
+
+            <!-- News Article 4 (Backdated to 2025) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Education" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Legal Education</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">The Evolving Landscape of Legal Education in Florida</h3>
+                    <p class="text-gray-600 text-sm mb-4">How Florida's law schools are adapting their curricula to meet the demands of a rapidly changing legal profession, focusing on practical skills and emerging technologies.</p>
+                    <p class="text-xs text-gray-400">Published: September 5, 2025</p>
+                </div>
+            </article>
+
+            <!-- News Article 5 (Backdated to 2024) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Business Law" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Business Law</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Navigating Corporate Governance in Florida: A 2024 Perspective</h3>
+                    <p class="text-gray-600 text-sm mb-4">An essential guide for businesses operating in Florida, covering the latest in corporate governance regulations, compliance, and best practices for sustainable growth.</p>
+                    <p class="text-xs text-gray-400">Published: April 12, 2024</p>
+                </div>
+            </article>
+
+            <!-- News Article 6 (Backdated to 2023) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Environmental Law" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Environmental Law</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Florida's Coastal Protection: Legal Frameworks and Challenges</h3>
+                    <p class="text-gray-600 text-sm mb-4">Examining the legal efforts to protect Florida's vulnerable coastlines from climate change and development pressures, featuring insights from environmental law specialists.</p>
+                    <p class="text-xs text-gray-400">Published: August 1, 2023</p>
+                </div>
+            </article>
         </div>
-        <div class="news-item">
-            <h2>The Rise of Tech Hubs in South Florida</h2>
-            <div class="news-meta">Published: February 25, 2026 | By Business Desk</div>
-            <p>From Miami to West Palm Beach, the "Silicon Beach" movement continues to gain momentum. Venture capital investment in Florida-based startups has reached record highs this year, signaling a robust future for the state's technology sector.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-blue-900 text-white p-1 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-white">Florida Lawyer Authority</span>
+                    </div>
+                    <p class="max-w-md mb-6">
+                        Florida Lawyer Authority is a premier news portal dedicated to highlighting professional excellence, regional business trends, and community impact across the state of Florida.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="news.html" class="hover:text-white transition">Legal News</a></li>
+                        <li><a href="spotlights.html" class="hover:text-white transition">Professional Spotlights</a></li>
+                        <li><a href="community.html" class="hover:text-white transition">Community Impact</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Legal</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Editorial Standards</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Florida Lawyer Authority Editorial Team. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition">Facebook</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2026 Florida Lawyer Authority. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

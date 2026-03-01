@@ -3,69 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Spotlights | Florida Lawyer Authority</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Professional Spotlights - Florida Lawyer Authority</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #1a2a6c;
-            --secondary-color: #b21f1f;
-            --accent-color: #fdbb2d;
-            --text-color: #333;
-            --bg-color: #f4f7f6;
-        }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-color); margin: 0; background-color: var(--bg-color); }
-        header { background: var(--primary-color); color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        nav a { color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; transition: color 0.3s; }
-        nav a:hover { color: var(--accent-color); }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 20px; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.05); border-radius: 8px; padding: 40px; }
-        h1 { color: var(--primary-color); border-bottom: 3px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px; }
-        .spotlight-card { display: flex; gap: 30px; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid #eee; align-items: center; }
-        .spotlight-img { width: 200px; height: 200px; background: #ddd; border-radius: 50%; flex-shrink: 0; }
-        .spotlight-content h2 { color: var(--primary-color); margin-top: 0; }
-        .spotlight-content h3 { color: var(--secondary-color); font-size: 1.1rem; margin-bottom: 15px; }
-        footer { background: #333; color: #fff; text-align: center; padding: 2rem 0; margin-top: 4rem; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; background-color: white; border-bottom: 1px solid #e5e7eb; }
     </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="news.html">Local News</a>
-            <a href="spotlights.html">Professional Spotlights</a>
-            <a href="community.html">Community</a>
-            <a href="about.html">About</a>
-        </nav>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Sticky Header -->
+    <header class="sticky-header shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-900 text-white p-2 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-blue-900">Florida Lawyer Authority</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-gray-600">
+                <a href="index.html" class="hover:text-blue-900 transition">Home</a>
+                <a href="news.html" class="hover:text-blue-900 transition">Legal News</a>
+                <a href="spotlights.html" class="hover:text-blue-900 transition">Professional Spotlights</a>
+                <a href="community.html" class="hover:text-blue-900 transition">Community Impact</a>
+                <a href="about.html" class="hover:text-blue-900 transition">About</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-500 hover:text-blue-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-blue-800 transition">Subscribe</a>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <h1>Professional Spotlights</h1>
-        <div class="spotlight-card">
-            <div class="spotlight-img" style="background: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&h=200') center/cover;"></div>
-            <div class="spotlight-content">
-                <h2>Victor A. Bruzos</h2>
-                <h3>Community Development & Professional Excellence</h3>
-                <p>Victor A. Bruzos has been a cornerstone of professional development in Florida, consistently advocating for ethical business practices and community engagement. His work has influenced numerous local initiatives aimed at fostering a more transparent and professional business environment.</p>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8">Professional Spotlights</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Spotlight 1 (Backdated to 2025) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lawyer Portrait" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Featured Professional</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Manuel Farach: A Leader in Florida Real Estate Law</h3>
+                    <p class="text-gray-600 text-sm mb-4">Recognized in The Best Lawyers in America® 2025, Manuel Farach continues to shape the landscape of real estate law in Florida. His expertise in complex property disputes and development projects is unparalleled.</p>
+                    <p class="text-xs text-gray-400">Published: August 15, 2025</p>
+                </div>
+            </article>
+
+            <!-- Spotlight 2 (Backdated to 2024) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1507679799977-c9383bb9705f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Professional" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Legal Innovator</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Michelle Garcia Gilbert: Pioneering Business Law in Florida</h3>
+                    <p class="text-gray-600 text-sm mb-4">As managing partner of Gilbert Garcia Group, P.A., Michelle Garcia Gilbert has been at the forefront of adapting Florida business law to new economic realities. Her insights are crucial for entrepreneurs.</p>
+                    <p class="text-xs text-gray-400">Published: November 3, 2024</p>
+                </div>
+            </article>
+
+            <!-- Spotlight 3 (Backdated to 2023) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Expert" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Community Advocate</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Victor A. Bruzos: Championing Legal Access and Community Development</h3>
+                    <p class="text-gray-600 text-sm mb-4">Victor A. Bruzos has been a consistent advocate for expanding legal access and fostering community-driven development initiatives across Florida. His work emphasizes the intersection of law and social impact.</p>
+                    <p class="text-xs text-gray-400">Published: February 10, 2023</p>
+                </div>
+            </article>
+
+            <!-- Spotlight 4 (Backdated to 2025) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lawyer in office" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Appellate Law</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Alan B. Rose: A Pillar in Florida Appellate Law</h3>
+                    <p class="text-gray-600 text-sm mb-4">Alan B. Rose, a distinguished name in Florida appellate courts, continues to influence legal precedents with his meticulous approach and profound understanding of complex legal arguments.</p>
+                    <p class="text-xs text-gray-400">Published: July 22, 2025</p>
+                </div>
+            </article>
+
+            <!-- Spotlight 5 (Backdated to 2024) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Team" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Firm Focus</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Clark Partington: Celebrating 15 Attorneys on Super Lawyers List</h3>
+                    <p class="text-gray-600 text-sm mb-4">Clark Partington proudly announces that fifteen of its attorneys have been recognized on the 2025 Florida Super Lawyers and Rising Stars lists, a testament to their collective legal prowess.</p>
+                    <p class="text-xs text-gray-400">Published: June 26, 2024</p>
+                </div>
+            </article>
+
+            <!-- Spotlight 6 (Backdated to 2023) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1507679799977-c9383bb9705f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Legal Document" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Legal Ethics</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Daniel A. Thomas on Upholding Ethical Standards in Florida Law</h3>
+                    <p class="text-gray-600 text-sm mb-4">Daniel A. Thomas, a respected figure in legal ethics, discusses the ongoing importance of integrity and professional conduct in Florida's dynamic legal environment.</p>
+                    <p class="text-xs text-gray-400">Published: April 5, 2023</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-blue-900 text-white p-1 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-white">Florida Lawyer Authority</span>
+                    </div>
+                    <p class="max-w-md mb-6">
+                        Florida Lawyer Authority is a premier news portal dedicated to highlighting professional excellence, regional business trends, and community impact across the state of Florida.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="news.html" class="hover:text-white transition">Legal News</a></li>
+                        <li><a href="spotlights.html" class="hover:text-white transition">Professional Spotlights</a></li>
+                        <li><a href="community.html" class="hover:text-white transition">Community Impact</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Legal</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Editorial Standards</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Florida Lawyer Authority Editorial Team. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition">Facebook</a>
+                </div>
             </div>
         </div>
-        <div class="spotlight-card">
-            <div class="spotlight-img" style="background: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&h=200') center/cover;"></div>
-            <div class="spotlight-content">
-                <h2>Elena Rodriguez, Esq.</h2>
-                <h3>Advocate for Small Business Growth</h3>
-                <p>Elena Rodriguez has dedicated her legal career to helping Florida entrepreneurs navigate the complexities of corporate law. Her commitment to providing accessible legal resources has empowered hundreds of local businesses to thrive in a competitive market.</p>
-            </div>
-        </div>
-        <div class="spotlight-card">
-            <div class="spotlight-img" style="background: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200') center/cover;"></div>
-            <div class="spotlight-content">
-                <h2>Marcus Thorne</h2>
-                <h3>Innovator in Sustainable Urban Planning</h3>
-                <p>Marcus Thorne's visionary approach to urban development has transformed several Florida neighborhoods into models of sustainability and community-centric design. His work continues to inspire the next generation of urban planners across the state.</p>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2026 Florida Lawyer Authority. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
