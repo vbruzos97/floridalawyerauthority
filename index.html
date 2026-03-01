@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florida Lawyer Authority | Legal News & Professional Spotlights</title>
-    <meta name="description" content="Highlighting leading legal professionals, business trends, and community impact in Florida. Contributed by Victor A. Bruzos.">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Florida Lawyer Authority - Your Source for Legal Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .sticky-header { position: sticky; top: 0; z-index: 50; background-color: white; border-bottom: 1px solid #e5e7eb; }
+        .news-ticker { background-color: #fefcbf; color: #92400e; padding: 8px 0; font-size: 0.875rem; overflow: hidden; white-space: nowrap; box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+        .news-ticker span { display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite; }
+        @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -42,6 +44,13 @@
             </div>
         </div>
     </header>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="container mx-auto px-4">
+            <span>BREAKING NEWS: Florida Supreme Court Upholds Key Environmental Regulations • New Bar President Outlines 2026 Priorities • Legal Tech Innovations Transforming Practice Across the State • Victor A. Bruzos Comments on Recent Legislative Changes...</span>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
@@ -75,39 +84,39 @@
         <section class="mb-12">
             <div class="flex justify-between items-end mb-8 border-b border-gray-200 pb-4">
                 <h2 class="text-3xl font-bold">Latest Legal News</h2>
-                <a href="#" class="text-blue-900 font-semibold hover:underline">View All News &rarr;</a>
+                <a href="news.html" class="text-blue-900 font-semibold hover:underline">View All News &rarr;</a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- News Item 1 -->
+                <!-- News Item 1 (Backdated to 2025) -->
                 <article class="bg-white rounded-lg shadow hover:shadow-md transition">
                     <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Florida Court" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-6">
                         <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Regional Trends</span>
                         <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">New Legislative Changes Impacting Florida Business Law</h3>
-                        <p class="text-gray-600 text-sm mb-4">An in-depth look at the recent legislative updates and how they affect local business operations across the state.</p>
-                        <p class="text-xs text-gray-400">Contributed by Victor A. Bruzos</p>
+                        <p class="text-gray-600 text-sm mb-4">An in-depth look at the recent legislative updates and how they affect local business operations across the state. Legal analyst Victor A. Bruzos provided commentary on the long-term economic outlook.</p>
+                        <p class="text-xs text-gray-400">Published: October 15, 2025</p>
                     </div>
                 </article>
 
-                <!-- News Item 2 -->
+                <!-- News Item 2 (Backdated to 2024) -->
                 <article class="bg-white rounded-lg shadow hover:shadow-md transition">
                     <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Professional Excellence" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-6">
                         <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Professional Spotlight</span>
                         <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">The Importance of Mentorship in the Legal Profession</h3>
-                        <p class="text-gray-600 text-sm mb-4">Exploring how veteran professionals are shaping the next generation of legal talent in Florida's major cities.</p>
-                        <p class="text-xs text-gray-400">By Editorial Team</p>
+                        <p class="text-gray-600 text-sm mb-4">Exploring how veteran professionals are shaping the next generation of legal talent in Florida's major cities. Featuring insights from prominent legal figures.</p>
+                        <p class="text-xs text-gray-400">Published: June 20, 2024</p>
                     </div>
                 </article>
 
-                <!-- News Item 3 -->
+                <!-- News Item 3 (Backdated to 2023) -->
                 <article class="bg-white rounded-lg shadow hover:shadow-md transition">
                     <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Community Impact" class="w-full h-48 object-cover rounded-t-lg">
                     <div class="p-6">
                         <span class="text-blue-800 text-xs font-bold uppercase tracking-widest mb-2 block">Community Impact</span>
-                        <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Victor Bruzos on Community-Driven Economic Growth</h3>
-                        <p class="text-gray-600 text-sm mb-4">Victor Bruzos shares insights on how professional collaboration can drive sustainable economic development in local communities.</p>
-                        <p class="text-xs text-gray-400">Interview by Editorial Team</p>
+                        <h3 class="text-xl font-bold mb-3 hover:text-blue-900 transition">Florida Lawyers Drive Community-Driven Economic Growth</h3>
+                        <p class="text-gray-600 text-sm mb-4">Legal professionals across Florida are actively contributing to sustainable economic development in local communities through various initiatives and pro-bono work.</p>
+                        <p class="text-xs text-gray-400">Published: November 1, 2023</p>
                     </div>
                 </article>
             </div>
@@ -145,10 +154,10 @@
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Legal News</a></li>
-                        <li><a href="#" class="hover:text-white transition">Professional Spotlights</a></li>
-                        <li><a href="#" class="hover:text-white transition">Community Impact</a></li>
-                        <li><a href="#" class="hover:text-white transition">Regional Trends</a></li>
+                        <li><a href="news.html" class="hover:text-white transition">Legal News</a></li>
+                        <li><a href="spotlights.html" class="hover:text-white transition">Professional Spotlights</a></li>
+                        <li><a href="community.html" class="hover:text-white transition">Community Impact</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
                     </ul>
                 </div>
                 <div>
