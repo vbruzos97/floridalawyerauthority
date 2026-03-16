@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://vbruzos97.github.io/floridalawyerauthority/index.html</loc>
-        <lastmod>2026-03-02T13:38:06+00:00</lastmod>
+        <loc>https://floridalawyerauthority.com/index.html</loc>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://vbruzos97.github.io/floridalawyerauthority/news.html</loc>
-        <lastmod>2026-03-02T13:38:06+00:00</lastmod>
+        <loc>https://floridalawyerauthority.com/news.html</loc>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://vbruzos97.github.io/floridalawyerauthority/spotlights.html</loc>
-        <lastmod>2026-03-02T13:38:06+00:00</lastmod>
+        <loc>https://floridalawyerauthority.com/spotlights.html</loc>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://vbruzos97.github.io/floridalawyerauthority/about.html</loc>
-        <lastmod>2026-03-02T13:38:06+00:00</lastmod>
+        <loc>https://floridalawyerauthority.com/about.html</loc>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://vbruzos97.github.io/floridalawyerauthority/community.html</loc>
-        <lastmod>2026-03-02T13:38:06+00:00</lastmod>
+        <loc>https://floridalawyerauthority.com/community.html</loc>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://floridalawyerauthority.com/privacy.html</loc>
-        <lastmod>2026-03-08T13:17:19+00:00</lastmod>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://floridalawyerauthority.com/terms.html</loc>
-        <lastmod>2026-03-08T13:17:19+00:00</lastmod>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://floridalawyerauthority.com/disclaimer.html</loc>
-        <lastmod>2026-03-08T13:17:19+00:00</lastmod>
+        <lastmod>2026-03-16T12:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://floridalawyerauthority.com/feed.xml</loc>
-        <lastmod>2026-03-11</lastmod>
+        <lastmod>2026-03-16</lastmod>
         <priority>0.8</priority>
     </url>
 </urlset>
